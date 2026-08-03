@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Consultoria Lixo Zero: menos desperdício, mais economia e valor para sua marca."
+  >
+
+  <meta name="theme-color" content="#006dac">
+
+  <title>Villar Lixo Zero | Sustentabilidade que gera valor</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+
+  <style>
+    :root {
+      --verde: #7fc904;
+      --azul: #006dac;
+      --azul-escuro: #043c5c;
+      --texto: #102033;
+      --cinza: #627386;
+      --branco: #ffffff;
+      --fundo: #f8fbfd;
+      --fundo-azul: #eef8fc;
+      --sombra: 0 18px 45px rgba(0, 67, 105, 0.13);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: var(--fundo);
+      color: var(--texto);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .page {
+      width: min(100%, 680px);
+      min-height: 100vh;
+      margin: auto;
+      background: var(--branco);
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.04);
+    }
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 24px 22px 38px;
+      color: var(--branco);
+      background:
+        linear-gradient(
+          145deg,
+          #005b8f 0%,
+          var(--azul) 58%,
+          #058fd5 100%
+        );
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: rgba(127, 201, 4, 0.2);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      bottom: 70px;
+      left: -110px;
+      width: 180px;
+      height: 180px;
+      border: 35px solid rgba(255, 255, 255, 0.06);
+      border-radius: 50%;
+    }
+
+    .topbar,
+    .hero-copy,
+    .hero-photo {
+      position: relative;
+      z-index: 1;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 48px;
+    }
+
+    .brand {
+      color: var(--branco);
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .brand span {
+      color: var(--verde);
+    }
+
+    .top-tag {
+      padding: 8px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      font-size: 0.7rem;
+      font-weight: 600;
+      backdrop-filter: blur(8px);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 16px;
+      color: #dff4ff;
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    h1 {
+      max-width: 560px;
+      font-size: clamp(2.25rem, 10vw, 4.2rem);
+      line-height: 1.02;
+      letter-spacing: -0.065em;
+    }
+
+    h1 strong {
+      color: var(--verde);
+    }
+
+    .hero-copy p {
+      max-width: 520px;
+      margin: 19px 0 25px;
+      color: #e2f4ff;
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    .hero-photo {
+      margin-top: 30px;
+      padding: 7px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 26px;
+      background: rgba(255, 255, 255, 0.1);
+      transform: rotate(-1deg);
+    }
+
+    .hero-photo img {
+      width: 100%;
+      height: 230px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    /* BOTÕES */
+
+    .primary-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 17px 22px;
+      border-radius: 16px;
+      background: var(--verde);
+      color: #10200b;
+      font-weight: 800;
+      box-shadow: 0 13px 25px rgba(70, 112, 0, 0.28);
+      transition: 0.25s;
+    }
+
+    .primary-button:hover {
+      background: #91df10;
+      transform: translateY(-2px);
+    }
+
+    .microcopy {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 11px;
+      color: #d9effb;
+      font-size: 0.69rem;
+    }
+
+    /* PROVA RÁPIDA */
+
+    .proof {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin: -22px 16px 0;
+      padding: 14px 8px;
+      border-radius: 20px;
+      background: var(--branco);
+      box-shadow: var(--sombra);
+    }
+
+    .proof div {
+      text-align: center;
+      border-right: 1px solid #e8eff3;
+    }
+
+    .proof div:last-child {
+      border: 0;
+    }
+
+    .proof strong {
+      display: block;
+      color: var(--azul);
+      font-size: 1.02rem;
+    }
+
+    .proof span {
+      display: block;
+      margin-top: 2px;
+      color: var(--cinza);
+      font-size: 0.62rem;
+      line-height: 1.3;
+    }
+
+    /* SEÇÕES */
+
+    section {
+      padding: 62px 22px;
+    }
+
+    .section-kicker {
+      margin-bottom: 8px;
+      color: var(--azul);
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    h2 {
+      max-width: 530px;
+      font-size: clamp(1.75rem, 7vw, 2.65rem);
+      line-height: 1.12;
+      letter-spacing: -0.045em;
+    }
+
+    .intro {
+      margin-top: 13px;
+      color: var(--cinza);
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+
+    /* POR QUE LIXO ZERO */
+
+    .why {
+      padding-top: 54px;
+      padding-bottom: 18px;
+    }
+
+    .why-card {
+      position: relative;
+      overflow: hidden;
+      padding: 27px;
+      border: 1px solid #d8ecf3;
+      border-radius: 26px;
+      background: linear-gradient(145deg, #f1f9fc, #e6f5fa);
+    }
+
+    .why-card::after {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: rgba(127, 201, 4, 0.16);
+    }
+
+    .why-card strong {
+      color: var(--azul);
+    }
+
+    .why-card p {
+      position: relative;
+      z-index: 1;
+      margin-top: 14px;
+      color: #4f6472;
+      font-size: 0.86rem;
+      line-height: 1.72;
+    }
+
+    .why-points {
+      display: grid;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .why-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--texto);
+      font-size: 0.78rem;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    .why-point i {
+      margin-top: 3px;
+      color: #62a600;
+    }
+
+    /* BENEFÍCIOS */
+
+    .benefit-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .benefit {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 14px;
+      align-items: center;
+      padding: 17px;
+      border: 1px solid #e4eef3;
+      border-radius: 18px;
+      background: var(--branco);
+      box-shadow: 0 8px 24px rgba(14, 70, 100, 0.06);
+    }
+
+    .benefit-icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: #eaf7d5;
+      color: #579300;
+      font-size: 1.2rem;
+    }
+
+    .benefit h3 {
+      font-size: 0.98rem;
+    }
+
+    .benefit p {
+      margin-top: 5px;
+      color: var(--cinza);
+      font-size: 0.76rem;
+      line-height: 1.55;
+    }
+
+    .benefit b {
+      color: #365064;
+    }
+
+    /* MÉTODO */
+
+    .method {
+      background: var(--fundo-azul);
+    }
+
+    .steps {
+      display: grid;
+      gap: 0;
+      margin-top: 30px;
+    }
+
+    .step {
+      position: relative;
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px;
+      padding-bottom: 24px;
+    }
+
+    .step:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      top: 42px;
+      left: 20px;
+      width: 2px;
+      height: calc(100% - 38px);
+      background: #c8e3ef;
+    }
+
+    .number {
+      z-index: 1;
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--azul);
+      color: var(--branco);
+      font-weight: 800;
+    }
+
+    .step h3 {
+      margin-top: 2px;
+      font-size: 0.95rem;
+    }
+
+    .step p {
+      margin-top: 4px;
+      color: var(--cinza);
+      font-size: 0.77rem;
+      line-height: 1.5;
+    }
+
+    /* DESTAQUE */
+
+    .seal-card {
+      position: relative;
+      overflow: hidden;
+      padding: 28px;
+      border-radius: 26px;
+      background: linear-gradient(135deg, #082c40, var(--azul-escuro));
+      color: var(--branco);
+    }
+
+    .seal-card::after {
+      content: "♻";
+      position: absolute;
+      right: -16px;
+      bottom: -48px;
+      color: rgba(127, 201, 4, 0.15);
+      font-size: 10rem;
+      line-height: 1;
+    }
+
+    .seal-icon {
+      width: 56px;
+      height: 56px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 19px;
+      border-radius: 17px;
+      background: var(--verde);
+      color: #10200b;
+      font-size: 1.7rem;
+    }
+
+    .seal-card h2 {
+      font-size: 1.75rem;
+    }
+
+    .seal-card p {
+      position: relative;
+      z-index: 1;
+      margin-top: 12px;
+      color: #d5e8f1;
+      font-size: 0.84rem;
+      line-height: 1.65;
+    }
+
+    /* CTA FINAL */
+
+    .final {
+      padding-top: 10px;
+      text-align: center;
+    }
+
+    .final h2 {
+      margin: auto;
+    }
+
+    .final p {
+      max-width: 480px;
+      margin: 14px auto 22px;
+      color: var(--cinza);
+      font-size: 0.87rem;
+      line-height: 1.65;
+    }
+
+    .secondary-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 18px;
+      color: var(--azul);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    /* RODAPÉ */
+
+    footer {
+      padding: 26px 22px 92px;
+      background: #031923;
+      color: #a9bfca;
+      text-align: center;
+      font-size: 0.68rem;
+      line-height: 1.7;
+    }
+
+    /* BOTÃO FIXO */
+
+    .sticky-contact {
+      position: fixed;
+      z-index: 10;
+      bottom: 14px;
+      left: 50%;
+      width: min(calc(100% - 28px), 652px);
+      padding: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      background: rgba(3, 25, 35, 0.9);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(12px);
+      transform: translateX(-50%);
+    }
+
+    .sticky-contact .primary-button {
+      padding: 14px;
+      border-radius: 13px;
+      font-size: 0.88rem;
+    }
+
+    :focus-visible {
+      outline: 3px solid #ffcf33;
+      outline-offset: 3px;
+    }
+
+    /* TELAS MAIORES */
+
+    @media (min-width: 700px) {
+      body {
+        background: #edf5f8;
+      }
+
+      .hero {
+        padding: 32px 48px 50px;
+      }
+
+      .topbar {
+        margin-bottom: 58px;
+      }
+
+      .hero-photo img {
+        height: 330px;
+      }
+
+      section {
+        padding: 76px 48px;
+      }
+
+      .why {
+        padding-bottom: 10px;
+      }
+
+      .benefit-list {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .benefit:last-child {
+        grid-column: 1 / -1;
+      }
+
+      .proof {
+        margin-inline: 32px;
+      }
+
+      .final {
+        padding-bottom: 70px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      * {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <!-- HERO -->
+
+    <header class="hero" id="inicio">
+      <div class="topbar">
+
+        <a class="brand" href="#inicio">
+          Villar <span>Lixo Zero</span>
+        </a>
+
+      </div>
+
+      <div class="hero-copy">
+
+        <span class="eyebrow">
+          <i class="fa-solid fa-leaf"></i>
+          Consultoria Lixo Zero
+        </span>
+
+        <h1>
+          Seu resíduo pode virar <strong>valor.</strong>
+        </h1>
+
+        <p>
+          Reduza desperdícios, fortaleça sua marca e prepare sua
+          empresa para um mercado mais sustentável.
+        </p>
+
+        <a
+          class="primary-button whatsapp-link"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          Quero transformar minha empresa
+        </a>
+
+        <span class="microcopy">
+          <i class="fa-solid fa-circle-check"></i>
+          Conversa rápida e sem compromisso.
+        </span>
+
+      </div>
+
+     <div class="hero-photo">
+  <img
+    src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=85&w=1400&auto=format&fit=crop"
+    alt="Materiais recicláveis separados para serem transformados em novos recursos"
+    loading="eager"
+  >
+
+  <div class="transformation-label">
+
+  </div>
+</div>
+    </header>
+
+    <!-- RESULTADOS -->
+
+    <aside class="proof" aria-label="Principais resultados">
+
+      <div>
+        <strong>Menos</strong>
+        <span>desperdício.</span>
+      </div>
+
+      <div>
+        <strong>Mais</strong>
+        <span>economia.</span>
+      </div>
+
+      <div>
+        <strong>+ Valor</strong>
+        <span>para a marca.</span>
+      </div>
+
+    </aside>
+
+    <!-- POR QUE LIXO ZERO -->
+
+    <section class="why">
+      <div class="why-card">
+
+        <p class="section-kicker">
+          Por que isso importa agora?
+        </p>
+
+        <h2>
+          O lixo não desaparece quando sai da sua empresa.
+        </h2>
+
+        <p>
+          Ele continua gerando custo, impacto e risco para a reputação
+          do negócio. Ser Lixo Zero significa
+          <strong>
+            repensar processos para evitar, reduzir, reutilizar e
+            destinar corretamente
+          </strong>
+          cada material — transformando um problema invisível em uma
+          estratégia de gestão.
+        </p>
+
+        <div class="why-points">
+
+          <span class="why-point">
+            <i class="fa-solid fa-circle-check"></i>
+            Menos recursos desperdiçados na operação.
+          </span>
+
+          <span class="why-point">
+            <i class="fa-solid fa-circle-check"></i>
+            Mais confiança de clientes, parceiros e equipe.
+          </span>
+
+          <span class="why-point">
+            <i class="fa-solid fa-circle-check"></i>
+            Uma empresa mais preparada para as novas exigências do mercado.
+          </span>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+
+    <section id="beneficios">
+
+      <p class="section-kicker">
+        Vantagens para sua empresa
+      </p>
+
+      <h2>
+        Fazer o certo também pode melhorar seus resultados.
+      </h2>
+
+      <p class="intro">
+        Lixo Zero não é apenas separar resíduos. É enxergar onde sua
+        empresa perde dinheiro, recursos e oportunidades — e transformar
+        isso em eficiência e valor.
+      </p>
+
+      <div class="benefit-list">
+
+        <article class="benefit">
+          <div class="benefit-icon">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+
+          <div>
+            <h3>Economia que aparece na operação</h3>
+
+            <p>
+              Ao mapear resíduos, descobrimos excessos de compra,
+              descarte e consumo.
+              <b>Menos desperdício significa melhor uso do orçamento.</b>
+            </p>
+          </div>
+        </article>
+
+        <article class="benefit">
+          <div class="benefit-icon">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+
+          <div>
+            <h3>Processos mais eficientes</h3>
+
+            <p>
+              Organizamos rotinas, responsabilidades e destinações.
+              Sua equipe ganha clareza e a gestão passa a tomar
+              decisões com mais controle.
+            </p>
+          </div>
+        </article>
+
+        <article class="benefit">
+          <div class="benefit-icon">
+            <i class="fa-solid fa-bullhorn"></i>
+          </div>
+
+          <div>
+            <h3>Reputação com credibilidade</h3>
+
+            <p>
+              Sustentabilidade comprovada gera confiança. Sua marca
+              passa a comunicar ações reais, evitando discursos vazios
+              e fortalecendo relações.
+            </p>
+          </div>
+        </article>
+
+        <article class="benefit">
+          <div class="benefit-icon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+
+          <div>
+            <h3>Equipe mais engajada</h3>
+
+            <p>
+              Quando as pessoas entendem o propósito e sabem como agir,
+              a sustentabilidade entra na cultura e deixa de depender
+              de iniciativas isoladas.
+            </p>
+          </div>
+        </article>
+
+        <article class="benefit">
+          <div class="benefit-icon">
+            <i class="fa-solid fa-award"></i>
+          </div>
+
+          <div>
+            <h3>Reconhecimento com Selo e Certificação</h3>
+
+            <p>
+              Prepare sua organização para avançar rumo ao
+              <b>Selo e à Certificação Lixo Zero</b>, demonstrando
+              compromisso e evolução contínua.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+
+    <section class="method">
+
+      <p class="section-kicker">
+        Simples e possível
+      </p>
+
+      <h2>
+        Você não precisa descobrir tudo sozinho.
+      </h2>
+
+      <p class="intro">
+        A Villar conduz cada etapa e adapta a estratégia à realidade
+        da sua organização.
+      </p>
+
+      <div class="steps">
+
+        <div class="step">
+          <span class="number">1</span>
+
+          <div>
+            <h3>Diagnóstico</h3>
+
+            <p>
+              Entendemos sua operação, seus resíduos e oportunidades.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <span class="number">2</span>
+
+          <div>
+            <h3>Plano possível de executar</h3>
+
+            <p>
+              Definimos prioridades, responsáveis e soluções adequadas
+              ao seu orçamento e rotina.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <span class="number">3</span>
+
+          <div>
+            <h3>Implementação e evolução</h3>
+
+            <p>
+              Orientamos a equipe, acompanhamos os resultados e mostramos
+              como comunicar os avanços.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DESTAQUE -->
+
+    <section>
+      <div class="seal-card">
+
+        <div class="seal-icon">
+          <i class="fa-solid fa-recycle"></i>
+        </div>
+
+        <h2>
+          Não se trata de produzir zero resíduo de um dia para o outro.
+        </h2>
+
+        <p>
+          Ser Lixo Zero é assumir um compromisso sério com a melhoria
+          contínua: evitar o que é desnecessário, aproveitar melhor os
+          recursos e garantir que cada resíduo tenha o destino mais
+          responsável possível.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+
+    <section class="final">
+
+      <p class="section-kicker">
+        Vamos começar?
+      </p>
+
+      <h2>
+        Quanto do seu resultado está indo para o lixo?
+      </h2>
+
+      <p>
+        Uma conversa pode revelar oportunidades que hoje passam
+        despercebidas. Conte um pouco sobre sua empresa e descubra
+        por onde começar.
+      </p>
+
+      <a
+        class="primary-button whatsapp-link"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+        Falar com uma especialista
+      </a>
+
+      <a class="secondary-link" href="#beneficios">
+        Rever benefícios
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+
+    </section>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+      © <span id="year"></span> Villar Consultoria Lixo Zero
+      <br>
+      ESG • Sustentabilidade • Gestão Ambiental
+    </footer>
+
+  </main>
+
+  <!-- BOTÃO FIXO -->
+
+  <nav
+    class="sticky-contact"
+    aria-label="Contato rápido"
+  >
+    <a
+      class="primary-button whatsapp-link"
+      href="#"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      Falar com especialista
+    </a>
+  </nav>
+
+  <script>
+    /*
+      Substitua o número abaixo pelo WhatsApp real.
+
+      Formato:
+      55 + DDD + número
+
+      Exemplo:
+      5511999999999
+    */
+
+    const WHATSAPP_NUMBER = "5500000000000";
+
+    const mensagem = encodeURIComponent(
+      "Olá! Vim pelo Instagram e quero saber mais sobre a Consultoria Lixo Zero."
+    );
+
+    document
+      .querySelectorAll(".whatsapp-link")
+      .forEach((link) => {
+        link.href =
+          `https://wa.me/${+5571991897584}?text=${mensagem}`;
+      });
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
